@@ -1,4 +1,7 @@
 # BurpSuiteCA Auto Insert Batch Script
+- 안드로이드 7.0 버전 이상의 기기에서 BurpSuite 프록시 설정을 하기 위해서 설치해야 하는 인증서(CA)를 자동으로 기기에 넣어주는 배치 스크립트입니다.
+- 아래 필독사항대로 환경구성이 되어 있어야 정상 동작합니다.
+
 ## ** 필독 **
 1. BurpSuite - Proxy - Proxy settings - Import/export CA certificate - [Export] Certificate in DER format - Next - cert.der
 - 위 과정을 통해 버프슈트 인증서(cert.der) 준비
