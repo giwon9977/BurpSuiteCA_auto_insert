@@ -1,5 +1,4 @@
-# BurpSuiteCA_auto_insert
-BurpSuiteCA Auto Insert Batch Script
+# BurpSuiteCA Auto Insert Batch Script
 ## ** 필독 **
 1. BurpSuite - Proxy - Proxy settings - Import/export CA certificate - [Export] Certificate in DER format - Next - cert.der
 - 위 과정을 통해 버프슈트 인증서(cert.der) 준비
