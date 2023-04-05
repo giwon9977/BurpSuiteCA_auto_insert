@@ -119,11 +119,11 @@ echo ================================================================
 :: 8. 안드로이드 인증서 디렉토리 권한 설정 및 인증서 공개키 파일 이동 
 :: su 를 사용하기 위해 기기 루팅이 되어 있어야 함.
 echo [*] 8. 안드로이드 인증서 디렉토리 권한 설정 및 인증서 공개키 파일 이동
-adb shell "su -c mount -o rw,remount /system"
-adb shell "su -c mv /sdcard/%PEMHASH%.0 /system/etc/security/cacerts"
-adb shell "su -c chmod 644 /system/etc/security/cacerts/%PEMHASH%.0"
-adb shell "su -c mount -o ro,remount /system"
-adb shell "su -c ls -l /system/etc/security/cacerts/%PEMHASH%.0"
+adb shell "su -c 'mount -o rw,remount /system'"
+adb shell "su -c 'mv /sdcard/%PEMHASH%.0 /system/etc/security/cacerts'"
+adb shell "su -c 'chmod 644 /system/etc/security/cacerts/%PEMHASH%.0'"
+adb shell "su -c 'mount -o ro,remount /system'"
+adb shell "su -c 'ls -l /system/etc/security/cacerts/%PEMHASH%.0'"
 echo [+] 파일 이동 및 권한 설정 완료
 
 echo ================================================================
